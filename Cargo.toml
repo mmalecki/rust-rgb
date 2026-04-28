@@ -32,6 +32,7 @@ serde = ["dep:serde"]
 defmt-03 = ["dep:defmt"]
 # Preview of changes for v0.9. May cause semver breakage if enabled.
 unstable-experimental = []
+typescript-type-def = ["dep:typescript-type-def"]
 
 [badges]
 maintenance = { status = "actively-developed" }
@@ -40,6 +41,7 @@ maintenance = { status = "actively-developed" }
 serde = { version = "1.0.200", optional = true, default-features = false, features = ["derive"] }
 bytemuck = { version = "1.16", optional = true }
 defmt = { version = "0.3.8", optional = true }
+typescript-type-def = { version = "0.5.13", optional = true, default-features = false }
 
 [dev-dependencies]
 serde_json = "1.0.100"
